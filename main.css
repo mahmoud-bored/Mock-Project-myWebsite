@@ -1,0 +1,227 @@
+body{
+    /* background-image: url("images/Untitled.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #2c2c2c;
+    --nav-width: 200px;
+    margin: 0 0 0 var(--nav-width);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* https://dev.to/stackfindover/animated-eyes-follow-mouse-cursor-javascript-mouse-move-3n40 */
+/*  eye start  */
+.replace-controller{
+    display: flex;
+    justify-content: center;
+}
+.eyes-container {
+    padding: 0;
+    margin: -10;
+    position: absolute;
+}
+svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    transform-style: preserve-3d;
+}
+circle.eye {
+    fill: #ffffff;
+    /* fill: #a1a1b6; */
+}
+path.top, path.bottom {
+    fill: transparent;
+    stroke: #d0d0e6;
+    stroke-width: 1.3px;
+    stroke-linecap: round;
+}
+.eye-outer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*  eye finish  */
+
+
+
+
+
+
+
+
+.background-text{
+    display: flex;
+    justify-content: center;
+    font-family: brush-script-std,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    color: #009579;
+    opacity: 50%;
+}
+.background-text-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.background-text-upper-container{
+    position: absolute;
+}
+#text{
+    font-size: large;
+}
+p, h1{
+    color: #cacaca;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+.logo{
+    height: auto;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.logo-container{
+    background-color: #2c2c2c;
+}
+.clicked{
+    background:rgba(255, 255, 255, 0.05);
+}
+.clicked .p{
+    color: #009579;
+}
+.sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 71px;
+    height: 100vh;
+    background: #222222;
+
+}
+.link-hover {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+.link-hover:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+.navbar-items{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #222222;
+
+}
+.nav_img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+}
+/* @-webkit-keyframes navElements {
+    from {top: 0px;}
+    to {top: -15px;}
+} */
+
+.link-hover-home:hover .img-hover-home, 
+.link-hover-about:hover .img-hover-about, 
+.link-hover-skills:hover .img-hover-skills,
+.link-hover-mywork:hover .img-hover-mywork,
+.link-hover-email:hover .img-hover-email{
+    position: relative;
+    /* animation: navElements 0.5s;
+    animation-iteration-count: 1; */
+    transform: translateY(-15px);
+    /* top: -15; */
+}
+.img-hover-home,
+.img-hover-about,
+.img-hover-skills,
+.img-hover-mywork,
+.img-hover-email{
+    transition: transform 0.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.text-hover{
+    position: absolute;
+    font-size: medium;
+    font-family: source-serif-pro, serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.text-hover-home, 
+.text-hover-about, 
+.text-hover-skills, 
+.text-hover-mywork, 
+.text-hover-email{
+    display: none;
+}
+.text-hover-home{
+    top: 22px;
+    left: 14px;
+}
+.text-hover-about{
+    top: 87px;
+    left: 13px;
+}
+.text-hover-skills{
+    top: 157px;
+    left: 16px;
+}
+.text-hover-mywork{
+    top: 236px;
+    left: 10px;
+    font-size: small;
+}
+.text-hover-email{
+    top: 298px;
+    left: 12px;
+}
+.green-color{
+    color: #009579;
+}
+.white-color{
+    color: #ffffff;
+}
+
+.link-hover-home:hover .text-hover-home, 
+.link-hover-about:hover  .text-hover-about, 
+.link-hover-skills:hover .text-hover-skills,
+.link-hover-mywork:hover .text-hover-mywork,
+.link-hover-email:hover .text-hover-email{
+    display: block;
+    -webkit-animation: fade;
+    animation: fade;
+    animation-duration: 1s;
+}
+
+
+
+
+
+

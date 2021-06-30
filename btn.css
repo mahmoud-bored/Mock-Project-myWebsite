@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-green: #009759;
+  --color-white: #fff;
+  --speed-fast: 0.5s;
+}
+
+.special-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.special-btn-txt {
+  top: 5px;
+  color: var(--color-green);
+}
+
+.special-btn {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  -webkit-transform: color;
+          transform: color;
+  trasnition: var(--speed-fast);
+  border: 1px solid var(--color-green);
+}
+
+.special-btn:hover {
+  border: 1px solid transparent;
+  background: var(--color-white) url(https://i.postimg.cc/fTddW5fJ/green-pixel.png);
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+  background-size: 180px;
+  -webkit-animation: animate var(--speed-fast) steps(8) forwards;
+          animation: animate var(--speed-fast) steps(8) forwards;
+}
+
+.special-btn:hover .special-btn-txt {
+  color: var(--color-white);
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+/*# sourceMappingURL=btn.css.map */
