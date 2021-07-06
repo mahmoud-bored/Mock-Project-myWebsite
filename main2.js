@@ -42,6 +42,8 @@ function hideCookiesBox() {
     document.querySelector('.pacman').classList.add('pacman-animation')
     setTimeout(function(){document.querySelector('.cookies-img').classList.add('cookies-animation')}, 1700)
     setTimeout(function(){document.querySelector('.cookies-img').classList.add('block-display')}, 4000)
-    setTimeout(function(){document.querySelector('.cookies-box-container').classList.add('hide-cookies-box')}, 3000)
-    setTimeout(function(){document.querySelector('.cookies-box-container').classList.add('block-display')}, 4000)
+    setTimeout(function(){document.querySelector('.cookies-box').classList.add('hide-cookies-box')}, 2500)
+    setTimeout(function(){document.querySelector('.cookies-box-border').classList.add('hide-cookies-box-border')}, 2500)
+    setTimeout(function(){document.querySelector('.cookies-box-container').classList.add('block-display')}, 3000)
+    
 }
