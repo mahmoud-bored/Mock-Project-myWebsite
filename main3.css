@@ -842,7 +842,7 @@ animation: hideCookiesBox 0.5s;
     padding: 50px;
 }
   
-.screen-body-item.left {
+.screen-body-item.left-part {
     display: flex;
     flex-direction: column;
 }
