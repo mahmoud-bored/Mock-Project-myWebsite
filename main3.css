@@ -869,14 +869,11 @@ animation: hideCookiesBox 0.5s;
 .app-contact {
     display: flex;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 100%;
     font-size: 8px;
     color: #888;
-    transition: font-size 0.5s;
 }
-.app-contact:hover{
-    font-size:10px;
-}
+
 
 .app-form-group {
     margin-bottom: 15px;
