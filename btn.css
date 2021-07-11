@@ -44,7 +44,7 @@
 
 .special-btn:hover {
   border: 1px solid transparent;
-  background: var(--color-white) url(https://i.postimg.cc/fTddW5fJ/green-pixel.png);
+  background: var(--color-white) url(images/special-btn-pixels.png);
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
   background-size: 180px;

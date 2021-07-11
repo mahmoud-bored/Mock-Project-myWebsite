@@ -32,11 +32,10 @@
 
   &:hover {
     border: 1px solid transparent;
-    background: var(--color-white) url(https://i.postimg.cc/fTddW5fJ/green-pixel.png); // 360px x 1080px
+    background: var(--color-white) url(images/special-btn-pixels.png); // 360px x 1080px
     transition-delay: 0.8s;
     background-size: 180px;
     animation: animate var(--speed-fast) steps(8) forwards;
-    border-radius: 20px;
     .special-btn-txt{
       color: var(--color-white);
       transition: color 1s;

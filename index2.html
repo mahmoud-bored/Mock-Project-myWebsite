@@ -2,13 +2,17 @@
   <head>
 
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" type="text/css" href="main3.css" />
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="btn.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://use.typekit.net/uhy0mtb.css">
+    <link rel="stylesheet" href="skills-cards.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- function font-family:var(--bs-font-sans-serif) has been removed from bootstrap.min.css manualy-->
     <!-- function p {margin: 0} has been removed from bootstrap.min.css manualy-->
@@ -19,135 +23,139 @@
   <body>
 
     <div class="navbar-grid">
-      <nav class="sidebar-nav">
-        <a class="logo-conatiner" href="#home" onclick="activateNavBar('home')">
+      <nav class="side-navbar">
+        <!-- <p class="logo-container" style="color: red;">hello</p> -->
+        <div class="logo-container">
+            <a href="#home" onclick="activateNavbar('home')">
   
-          <!-- Eye Copyright to : https://dev.to/stackfindover/animated-eyes-follow-mouse-cursor-javascript-mouse-move-3n40 -->
-          <!-- Eye Section -->
-          <div class="replace-controller">
-            <div class="eyes-container">
-              <div class="eye-outer">
-                <div class="left-eye" style="margin-right:3px;">
-                  <svg class="eye-svg" viewBox="0 0 21 21">
-                      <circle class="eye eye-left" cx="10.5" cy="10.5" r="2.25"></circle>
-                      <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
-                      <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
-                  </svg>  
+                <!-- Eye Copyright to : https://dev.to/stackfindover/animated-eyes-follow-mouse-cursor-javascript-mouse-move-3n40 -->
+                <!-- Eye Section -->
+                <div class="replace-controller">
+                    <div class="eyes-container">
+                    <div class="eye-outer">
+                        <div class="left-eye" style="margin-right:3px;">
+                        <svg class="eye-svg" viewBox="0 0 21 21">
+                            <circle fill="red" class="eye eye-left" cx="10.5" cy="10.5" r="2.25"></circle>
+                            <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
+                            <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
+                        </svg>  
+                        </div>
+                        <div class="right-eye" style="margin-left:3px;">
+                            <svg class="eye-svg" viewBox="0 0 21 21">
+                                <circle class="eye eye-right" cx="10.5" cy="10.5" r="2.25"></circle>
+                                <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
+                                <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="right-eye" style="margin-left:3px;">
-                    <svg class="eye-svg" viewBox="0 0 21 21">
-                        <circle class="eye eye-right" cx="10.5" cy="10.5" r="2.25"></circle>
-                        <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
-                        <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5"></path>
-                    </svg>
+                <!-- Eyes Section End -->
+        
+                <br>
+        
+                <!-- Logo animated gradient Section -->
+                <div class="logo">
+                  <svg class="logo-p1" width="180px" height="150px" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="animated-gradient-1" x1="50%" y1="0%" x2="50%" y2="100%" gradientTransform="rotate(-45)">
+                            <stop offset="0%" stop-color="#ee7752">
+                              <animate attributeName="stop-color" values="#ee7752;#e73c7e;#23a6d5;#23d5ab;#ee7752" dur="2.5s" repeatCount="indefinite"></animate>
+                            </stop>
+                            <stop offset="33%" stop-color="#e73c7e">
+                              <animate attributeName="stop-color" values="#e73c7e;#23a6d5;#23d5ab;#ee7752;#e73c7e" dur="2.5s" repeatCount="indefinite"></animate>
+                            </stop>
+                            <stop offset="66%" stop-color="#23a6d5">
+                              <animate attributeName="stop-color" values="#23a6d5;#23d5ab;#ee7752;#e73c7e;#23a6d5" dur="2.5s" repeatCount="indefinite"></animate>
+                            </stop>
+                            <stop offset="100%" stop-color="#23d5ab">
+                              <animate attributeName="stop-color" values="#23d5ab;#ee7752;#e73c7e;#23a6d5;#23d5ab" dur="2.5s" repeatCount="indefinite"></animate>
+                            </stop>
+                        </linearGradient>
+                    </defs>
+                    <path style="width: 66%;height: 77px;" x="50%" y="50%" fill="url(#animated-gradient-1)" d="M113 84l12 2.5V91H80v-5l12-2V14.5L57 91h-2.5L19 13v71l13 
+                    2v5H0v-5l11-2-.5-78.5L0 4V0h35l26.5 60L88 0h37v4l-12 2v78z"/>
+                  </svg>
+        
+        
+        
+                  <svg class="logo-p2" width="180px" height="150px" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="animated-gradient-2" x1="50%" y1="0%" x2="50%" y2="100%" gradientTransform="rotate(45)">
+        
+        
+                        <stop offset="0%" stop-color="#23d5ab">
+                          <animate attributeName="stop-color" values="#23d5ab;#ee7752;#e73c7e;#23a6d5;#23d5ab" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop offset="33%" stop-color="#23a6d5">
+                          <animate attributeName="stop-color" values="#23a6d5;#23d5ab;#ee7752;#e73c7e;#23a6d5" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop offset="66%" stop-color="#e73c7e">
+                          <animate attributeName="stop-color" values="#e73c7e;#23a6d5;#23d5ab;#ee7752;#e73c7e" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop offset="100%" stop-color="#ee7752">
+                          <animate attributeName="stop-color" values="#ee7752;#e73c7e;#23a6d5;#23d5ab;#ee7752" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                    </linearGradient>
+                    </defs>
+                    <path style="width: 66%;height: 77px;" x="50%" y="50%" fill="url(#animated-gradient-2)" d="M113 84l12 2.5V91H80v-5l12-2V14.5L57 91h-2.5L19 13v71l13 
+                    2v5H0v-5l11-2-.5-78.5L0 4V0h35l26.5 60L88 0h37v4l-12 2v78z"/>
+                  </svg>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- Eyes Section End -->
+                
+                <!-- Logo animated gradient Section End -->
+              </a>
+        
+        </div>
+        
   
-          <br>
+        <!-- <div class="navbar-items"> -->
   
-          <!-- Logo animated gradient Section -->
-          <div class="logo">
-            <svg class="logo-p1" width="180px" height="150px" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                  <linearGradient id="animated-gradient-1" x1="50%" y1="0%" x2="50%" y2="100%" gradientTransform="rotate(-45)">
-                      <stop offset="0%" stop-color="#ee7752">
-                        <animate attributeName="stop-color" values="#ee7752;#e73c7e;#23a6d5;#23d5ab;#ee7752" dur="2.5s" repeatCount="indefinite"></animate>
-                      </stop>
-                      <stop offset="33%" stop-color="#e73c7e">
-                        <animate attributeName="stop-color" values="#e73c7e;#23a6d5;#23d5ab;#ee7752;#e73c7e" dur="2.5s" repeatCount="indefinite"></animate>
-                      </stop>
-                      <stop offset="66%" stop-color="#23a6d5">
-                        <animate attributeName="stop-color" values="#23a6d5;#23d5ab;#ee7752;#e73c7e;#23a6d5" dur="2.5s" repeatCount="indefinite"></animate>
-                      </stop>
-                      <stop offset="100%" stop-color="#23d5ab">
-                        <animate attributeName="stop-color" values="#23d5ab;#ee7752;#e73c7e;#23a6d5;#23d5ab" dur="2.5s" repeatCount="indefinite"></animate>
-                      </stop>
-                  </linearGradient>
-              </defs>
-              <path style="width: 66%;height: 77px;" x="50%" y="50%" fill="url(#animated-gradient-1)" d="M113 84l12 2.5V91H80v-5l12-2V14.5L57 91h-2.5L19 13v71l13 
-              2v5H0v-5l11-2-.5-78.5L0 4V0h35l26.5 60L88 0h37v4l-12 2v78z"/>
-            </svg>
-  
-  
-  
-            <svg class="logo-p2" width="180px" height="150px" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="animated-gradient-2" x1="50%" y1="0%" x2="50%" y2="100%" gradientTransform="rotate(45)">
-  
-  
-                  <stop offset="0%" stop-color="#23d5ab">
-                    <animate attributeName="stop-color" values="#23d5ab;#ee7752;#e73c7e;#23a6d5;#23d5ab" dur="2s" repeatCount="indefinite"></animate>
-                  </stop>
-                  <stop offset="33%" stop-color="#23a6d5">
-                    <animate attributeName="stop-color" values="#23a6d5;#23d5ab;#ee7752;#e73c7e;#23a6d5" dur="2s" repeatCount="indefinite"></animate>
-                  </stop>
-                  <stop offset="66%" stop-color="#e73c7e">
-                    <animate attributeName="stop-color" values="#e73c7e;#23a6d5;#23d5ab;#ee7752;#e73c7e" dur="2s" repeatCount="indefinite"></animate>
-                  </stop>
-                  <stop offset="100%" stop-color="#ee7752">
-                    <animate attributeName="stop-color" values="#ee7752;#e73c7e;#23a6d5;#23d5ab;#ee7752" dur="2s" repeatCount="indefinite"></animate>
-                  </stop>
-              </linearGradient>
-              </defs>
-              <path style="width: 66%;height: 77px;" x="50%" y="50%" fill="url(#animated-gradient-2)" d="M113 84l12 2.5V91H80v-5l12-2V14.5L57 91h-2.5L19 13v71l13 
-              2v5H0v-5l11-2-.5-78.5L0 4V0h35l26.5 60L88 0h37v4l-12 2v78z"/>
-            </svg>
-          </div>
-          
-          <!-- Logo animated gradient Section End -->
-        </a>
-  
-  
-        <div class="navbar-items">
-  
-          <div>
-            <a href="#home" class="link-hover link-hover-home" onclick="activateNavBar('home')">
-              <div>
+          <div class="home-link-container">
+            <a href="#home" class="link-hover link-hover-home" onclick="activateNavbar('home')">
+              <div class="img-container home-img-container">
                 <img src="images/home-green.png" class="nav_img home img-hover img-hover-home">
               </div>
               <p class="text-hover text-hover-home green-color">Home</p>
             </a>
           </div>
   
-          <div>
-            <a href="#about" class="link-hover link-hover-about" onclick="activateNavBar('about')">
-              <div>
+          <!-- <div class="about-link-container">
+            <a href="#about" class="link-hover link-hover-about" onclick="activateNavbar('about')">
+              <div class="img-container about-img-container">
                 <img src="images/about.png" class="nav_img about img-hover img-hover-about">
               </div>
               <p class="text-hover text-hover-about">About</p>
             </a>
-          </div>
+          </div> -->
   
-          <div>
-            <a href="#skills" class="link-hover link-hover-skills" onclick="activateNavBar('skills')">
-              <div>
+          <div class="skills-link-container">
+            <a href="#skills" class="link-hover link-hover-skills" onclick="activateNavbar('skills')">
+              <div class="img-container skills-img-container">
                 <img src="images/skills.png" class="nav_img skills img-hover img-hover-skills">
               </div>
               <p class="text-hover text-hover-skills">Skills</p>
             </a>
           </div>
   
-          <div>
-            <a href="#mywork" class="link-hover link-hover-mywork" onclick="activateNavBar('mywork')">
-              <div>
+          <div class="mywork-link-container">
+            <a href="#mywork" class="link-hover link-hover-mywork" onclick="activateNavbar('mywork')">
+              <div class="img-container mywork-img-container">
                 <img src="images/mywork.png" class="nav_img mywork img-hover img-hover-mywork">
               </div>
               <p class="text-hover text-hover-mywork">My Work</p>
             </a>
           </div>
   
-          <div>
-            <a href="#email" class="link-hover link-hover-email" onclick="activateNavBar('email')">
-              <div>
+          <div class="email-link-container">
+            <a href="#email" class="link-hover link-hover-email" onclick="activateNavbar('email')">
+              <div class="img-container email-img-container">
                 <img src="images/email.png" class="nav_img email img-hover img-hover-email">
               </div>
               <p class="text-hover text-hover-email">E-mail</p>
             </a>  
           </div>
-        </div>
+        <!-- </div> -->
       </nav>
     </div>
    
@@ -176,7 +184,9 @@
                 <img src="images/cookies.png" width="150px" height="150px">
               </div>
               <div id="title">Your privacy</div>
-              <div class="cookies-subject">&nbsp;&nbsp;&nbsp;&nbsp;By clicking “Accept”, you agree "Mahmoud" can store cookies on your device and disclose information in accordance with our Cookie Policy.
+              <div class="cookies-subject">&nbsp;&nbsp;&nbsp;&nbsp;Don't worry, This Website isn't useing Cookies "I just made this because its <br> Cool" <br> -and click Accept by the way-
+
+              <!-- <div class="cookies-subject">&nbsp;&nbsp;&nbsp;&nbsp;By clicking “Accept”, you agree "Mahmoud" can store cookies on your device and disclose information in accordance with our Cookie Policy. -->
               </div>
               <div class="cookies-submit-container">
 
@@ -197,34 +207,148 @@
       
 
 
-
+      <div class="cookies-box-blur"></div>
       <div class="container1">
-        <section class="home-section">
+        <section class="home-section" onmouseover="activateNavbar('home')">
           <div id="home" class="page">
             <h1>Forside</h1>
           </div>
         </section>
 
-        <section class="about-section">
+        <!-- <section class="about-section" onmouseover="activateNavbar('about')">
           <div id="about" class="page">
           
             <h1>About</h1>
           </div>
-        </section>
+        </section> -->
 
-        <section class="skills-section">
-          <div id="skills" class="page">
-            <h1>skills</h1>
+        <section class="skills-section" onmouseover="activateNavbar('skills')">
+
+         
+      
+
+          <div class="skills-page" id="skills">
+            <div class="mywork-background background-stretch">
+              <div class="stars-container">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+              </div>
+            </div>
+            <div class="space-container background-stretch">
+              <div class="space-img-container">
+                <!-- <h2 class="object" data-value="3">Space<br><span>Background</span></h2> -->
+                <img src="images/1.png" class="object space-img-1" data-value="-2">
+                <img src="images/2.png" class="object space-img-2" data-value="6">
+                <img src="images/3.png" class="object space-img-3" data-value="4">
+                <img src="images/4.png" class="object space-img-4" data-value="-6">
+                <img src="images/5.png" class="object space-img-5" data-value="8">
+                <img src="images/6.png" class="object space-img-6" data-value="-4">
+                <img src="images/7.png" class="object space-img-7" data-value="5">
+                <!-- <img src="images/8.png" class="object space-img-8" data-value="-9"> -->
+                <img src="images/9.png" class="object space-img-9" data-value="-5">
+              </div>
+            </div>
+
+            <h1 class="skills-page-title" style="z-index: 4;">Skills & Experience</h1>
+
+            <div class="skills-left-section" style="z-index: 4;">
+              <div class="skills-cards-container">
+                <div class="skills-cards">
+                <!-- <div class="lefter">
+                  <div class="text">Hosting</div>
+                </div> -->
+                  <div class="left" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                    <div class="text">Web Design</div>
+                  </div>
+                  <div class="center">
+                    <div class="explainer"><span>HERE</span></div>
+                    <div class="text">Frontend Development</div>
+                    </div>
+                  <div class="right">
+                    <div class="text">Backend Development</div>
+                  </div>
+                <!-- <div class="righter">
+                  <div class="text">SEO</div>
+                </div> -->
+                </div>
+              </div>
+  
+              <p class="skills-text" style="z-index: 4;">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  
+            </div>
+
+            <div class="skills-right-section" >
+
+
+              <div class="accordion-card" style="grid-area: accordion-card-1;">
+                <div class="accordion-card-content">
+                  <p><i class="bi bi-chevron-right"></i> Front-End</p>
+                  <div class="progress margin-left margin-right" style="height: 2px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 83%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="inside-accordion-card">
+                    <p><img src="images/html-logo.png" width="20px" height="23px">&nbsp;&nbsp;&nbsp;HTML</p>
+                    <div class="progress margin-left margin-right" style="height: 2px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p><img src="images/css-logo.png" width="20px" height="23px">&nbsp;&nbsp;&nbsp;CSS</p>
+                    <div class="progress margin-left margin-right" style="height: 2px;">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 83%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p><img src="images/javascript-logo.png" width="20px" height="23px">&nbsp;&nbsp;&nbsp;Javascript</p>
+                    <div class="progress margin-left margin-right" style="height: 2px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-card" style="grid-area: accordion-card-2;">
+                <div class="accordion-card-content">
+                  <p><i class="bi bi-chevron-right"></i> Back-End</p>
+                  <div class="progress margin-left margin-right" style="height: 2px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="inside-accordion-card">
+                    <p><img src="images/nodejs-logo.png" width="30px" height="20px">&nbsp;&nbsp;&nbsp;Node Js</p>
+                    <div class="progress margin-left margin-right" style="height: 2px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p><img src="images/python-logo.png" width="20px" height="20px">&nbsp;&nbsp;&nbsp;Python</p>
+                    <div class="progress margin-left margin-right" style="height: 2px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
           </div>
         </section>
 
-        <section class="mywork-section">
+        <section class="mywork-section" onmouseover="activateNavbar('mywork')">
           <div id="mywork" class="page">
-            <h1>My Work</h1>
+
+            
+
+            <div class="mywork-background">
+              <div class="stars-container">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+              </div>
+              <div class="shiny-text-container">
+                <p class="btn-shine">This is my first Real Project after a Year of Learning</p>
+              </div>
+            </div>
+            <!-- <h1>My Work</h1> -->
           </div>  
         </section>
 
-        <section class="email-section">
+        <section class="email-section" onmouseover="activateNavbar('email')">
           <div class="blur"></div>
           <div class="email-page" id="email">
 
@@ -235,69 +359,66 @@
 
             <div class="email-grid">
 
-
               <div class="email-form-grid">
                 <div class="floating-text-container">
                   <h1 class="h1-1">Contact Me</h1>
                   <h1 class="h1-2">Contact Me</h1>    
                 </div>
               
-                <div></div>
+                <!-- <div></div> -->
   
-                <div class="second-row align-items-start">
-                  <div class="first-col email-form">
-                    <div class="background">
-                      <div class="email-container">
-                        <div class="screen">
-                          <div class="screen-header">
-                            <div class="screen-header-left">
-                              <div class="screen-header-button close"></div>
-                              <div class="screen-header-button maximize"></div>
-                              <div class="screen-header-button minimize"></div>
-                            </div>
-                            <div class="screen-header-right">
-                              <div class="screen-header-ellipsis"></div>
-                              <div class="screen-header-ellipsis"></div>
-                              <div class="screen-header-ellipsis"></div>
-                            </div>
+                <div class="email-form">
+                  <div class="background">
+                    <div class="email-container">
+                      <div class="screen">
+                        <div class="screen-header">
+                          <div class="screen-header-left">
+                            <div class="screen-header-button close"></div>
+                            <div class="screen-header-button maximize"></div>
+                            <div class="screen-header-button minimize"></div>
                           </div>
-                          <div class="screen-body">
-                            <div class="screen-body-item left">
-                              <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>ME</span>
-                              </div>
-                              <div class="app-contact">CONTACT INFO : +20 11 048 3819 8</div>
-                            </div>
-                            <div class="screen-body-item">
-                              <div class="app-form">
-                                <div class="app-form-group">
-                                  <input class="app-form-control" placeholder="NAME">
-                                  <span class="input-border"/>
-                                </div>
-                                <div class="app-form-group">
-                                  <input class="app-form-control" placeholder="EMAIL">
-                                  <span class="input-border"></span>
-                                </div>
-                                <div class="app-form-group message">
-                                  <input class="app-form-control subject" onClick="activeInput('subject')" placeholder="SUBJECT">
-                                  <span class="input-border"/>
-                                </div>
-                                <div class="app-form-group">
-                                  <input class="app-form-control" placeholder="MESSAGE">
-                                  <span class="input-border"/>
-                                </div>
-                                <div class="app-form-group buttons">
-                                  <button class="app-form-button">DELETE</button>
-                                  <button class="app-form-button">SEND</button>
-                                </div>
-                              </div>
-                              
-                            </div>
+                          <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
                           </div>
                         </div>
-                    
+                        <div class="screen-body">
+                          <div class="screen-body-item left">
+                            <div class="app-title">
+                              <span>CONTACT</span>
+                              <span>ME</span>
+                            </div>
+                            <div class="app-contact">CONTACT INFO : +20 11 048 3819 8</div>
+                          </div>
+                          <div class="screen-body-item">
+                            <div class="app-form">
+                              <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME">
+                                <span class="input-border"/>
+                              </div>
+                              <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                                <span class="input-border"></span>
+                              </div>
+                              <div class="app-form-group message">
+                                <input class="app-form-control subject" onClick="activeInput('subject')" placeholder="SUBJECT">
+                                <span class="input-border"/>
+                              </div>
+                              <div class="app-form-group">
+                                <input class="app-form-control" placeholder="MESSAGE">
+                                <span class="input-border"/>
+                              </div>
+                              <div class="app-form-group buttons">
+                                <button class="app-form-button">DELETE</button>
+                                <button class="app-form-button">SEND</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
                       </div>
+                  
                     </div>
                   </div>
                 </div>
